@@ -443,6 +443,7 @@ body.simulador-viajes {
     margin-left: 100px;
     text-shadow: 0 0 20px gold;
     color: rgb(166, 11, 11);
+    perspective: 1000px;
 }
 
 @keyframes rotate {
@@ -992,12 +993,13 @@ textarea {
 
     .slider {
         margin-left: 0;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
+        perspective: 900px;
     }
 
     .slider span {
-        transform: rotateY(calc(var(--i)*45deg)) translateZ(250px);
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(240px);
     }
 
     .contenido-simulador {
@@ -1091,6 +1093,23 @@ textarea {
     .botonnave {
         width: 5rem;
         height: 5rem;
+    }
+}
+
+/* SPLIT SCREEN / TAMAÑO INTERMEDIO (769px hasta 1023px) */
+@media (max-width: 1023px) and (min-width: 769px) {
+    .slider {
+        width: 170px;
+        height: 170px;
+        perspective: 850px;
+    }
+
+    .slider span {
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(220px);
+    }
+
+    .contenido-simulador {
+        gap: 80px;
     }
 }
 
@@ -1206,10 +1225,11 @@ textarea {
         margin-bottom: 200px;
         margin-left: 0;
         margin-top: 30px;
+        perspective: 600px;
     }
 
     .slider span {
-        transform: rotateY(calc(var(--i)*45deg)) translateZ(180px);
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(140px);
     }
 
     .contenido-simulador {
@@ -1509,10 +1529,11 @@ textarea {
         height: 100px;
         margin-bottom: 150px;
         margin-top: 20px;
+        perspective: 500px;
     }
 
     .slider span {
-        transform: rotateY(calc(var(--i)*45deg)) translateZ(150px);
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(110px);
     }
 
     .slider span img {
