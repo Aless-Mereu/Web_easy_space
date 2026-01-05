@@ -416,7 +416,7 @@ body.simulador-viajes {
     background-position: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 
@@ -530,7 +530,7 @@ body.simulador-viajes {
     background-position: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -634,11 +634,11 @@ body.simulador-viajes {
 /*----------------------- LOW COST & PREMIUM DELUXE ---------------------- */
 
 .contenidolowcost {
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .contenidopremium {
-    overflow: hidden;
+    overflow-y: auto;
     background-image: url(../img/SL-101521-46190-02.jpg);
     color: gold;
     font-weight: bold;
