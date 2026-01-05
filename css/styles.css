@@ -64,7 +64,7 @@ header {
 .nav li ul {
     position: absolute;
     z-index: 1000;
-    white-space: nowrap;
+    min-width: 160px;
 }
 
 .nav li ul li {
